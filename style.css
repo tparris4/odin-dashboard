@@ -2,6 +2,169 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Helvetica;
+    position: relative;
+    
+    
   }
   
+  .container {
+      text-align:center;
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      grid-row: span 1;
+
+      
+
+      
+  }
+
+  h3 {
+      margin-left: 10px;
+  }
+
+.sidebar {
+    background-color: aqua;
+    font-size: 20px;
+    display: grid;
+   grid-column: span 1;
+   grid-template-rows: 1fr 1fr 1fr;
+    padding: 5px;
+}
+
+.sidebar .sidecontent {
+    display: grid;
+    align-items: center;
+    grid-row: span 1;
+    
+  }
   
+span > .logo {
+margin-top: 4px;
+}
+  .container div {
+      padding: 5px;
+      font-size: 10px;
+      font-weight: bold;
+  }
+
+  .leftcontainer {
+      display: grid;
+      grid-column: 2 / 4;
+      grid-template-rows: 1fr 9fr;
+      border-radius: 3px;
+      box-shadow: 15px;
+  }
+
+  .header {
+      background-color: peachpuff;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      box-shadow: 10px;
+  }
+
+  .innerheader {
+      display: grid;
+      grid-row: 1/2;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+
+  .innerheader > .searchbar {
+      margin-left: auto;
+      display: flex;
+    flex: 1;
+  }
+
+  
+  .bottomheader {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      align-items:center;
+
+  }
+
+  .bottomheader > .topright {
+    padding: 5px;
+    text-decoration: none;
+    font-size:18px;
+}
+
+  .buttons {
+    text-align: center;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    
+  }
+
+  li > .btn{
+    background-color: aqua;
+    border-radius: 12px;
+    text-align: center;
+    height: 50px;
+  }
+
+ 
+
+  .project {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: repeat(1, 1fr);
+      gap: 15px;
+      background-color: grey;
+      margin-top: 10px;
+      text-align: left;
+  }
+
+  .project > .maincard {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-row: 2fr 2fr;
+      justify-items: center;
+      align-items: center;
+      gap: 5px;
+  }
+
+
+  .maincard > .card {
+    border-radius: 10px;
+    border-left-style: solid;
+    border-left-color: coral;
+    background-color: #FFFFFF;
+    color: black;
+    text-align: left;
+    height: 200px;
+  }
+
+  .card p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.card .title {
+  font-size: 18px;
+  text-align: center;
+}
+
+.rightproject {
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements > .card {
+    background-color: #FFFFFF;
+    color: black;
+    text-align: left;
+    height: 200px;
+}
+
+.trending > .card {
+    background-color: #FFFFFF;
+    color: black;
+    text-align: left;
+    height: 200px;
+}
